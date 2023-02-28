@@ -144,7 +144,7 @@ button {
 
 
 .chat__input {
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -154,6 +154,7 @@ button {
     align-items: center;
     padding: 7px;
     height: 100px;
+    transform: translateY(-100%);
 }
 
 
