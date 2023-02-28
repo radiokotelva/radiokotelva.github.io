@@ -89,6 +89,7 @@ button {
     box-shadow: inset 5px 0 20px #580C59;
 
 }
+
 .chat__body::-webkit-scrollbar {
     background-color: #130327;
     width: 8px;
@@ -200,5 +201,9 @@ button {
         z-index: 99999999;
         box-shadow: none;
         border-radius: 0;
+    }
+
+    .chat__body {
+        height: 100vh;
     }
 }
