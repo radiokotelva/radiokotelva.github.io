@@ -2684,7 +2684,7 @@ td {
   }
 
   .chat__wrap {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -2695,7 +2695,7 @@ td {
     transform: translateX(-100%);
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
-    transition: 0.5s
+    transition: 0.5s;
   }
 
   .chat__wrap.open {
