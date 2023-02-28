@@ -7,9 +7,20 @@ if (document.documentElement.clientWidth > 576) {
     `;
 }
 document.addEventListener("DOMContentLoaded", () => {
+    const $chatTextArea = document.querySelector('body > div.chat__wrap > div.chat__input > div > textarea');
+    const $chatWrap = document.querySelector('body > div.chat__wrap');
 
-    console.log(document.documentElement.clientWidth);
-    console.log(document.documentElement.clientHeight);
+    $chatTextArea?.addEventListener("focus", ()=> {
+        if (window.innerWidth < 576) {
+            $chatWrap.style.height = "85vh";
+        }
+    });
+
+    $chatTextArea?.addEventListener("blur", ()=> {
+        if (window.innerWidth < 576) {
+            $chatWrap.style.height = "100vh";
+        }
+    });
 
     // Телефоны
     let flagVinyl = false;
