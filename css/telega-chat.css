@@ -144,7 +144,7 @@ button {
 
 
 .chat__input {
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -201,9 +201,5 @@ button {
         z-index: 99999999;
         box-shadow: none;
         border-radius: 0;
-    }
-
-    .chat__body {
-        height: 100vh;
     }
 }
