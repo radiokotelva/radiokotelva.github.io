@@ -10,17 +10,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const $chatTextArea = document.querySelector('body > div.chat__wrap > div.chat__input > div > textarea');
     const $chatWrap = document.querySelector('body > div.chat__wrap');
 
-    // $chatTextArea?.addEventListener("focus", ()=> {
-    //     if (window.innerWidth < 576) {
-    //         $chatWrap.style.height = "85vh";
-    //     }
-    // });
+    $chatTextArea?.addEventListener("focus", ()=> {
+        if (window.innerWidth < 576) {
+            $chatWrap.style.height = "88vh";
+        }
+    });
 
-    // $chatTextArea?.addEventListener("blur", ()=> {
-    //     if (window.innerWidth < 576) {
-    //         $chatWrap.style.height = "100vh";
-    //     }
-    // });
+    $chatTextArea?.addEventListener("blur", ()=> {
+        if (window.innerWidth < 576) {
+            $chatWrap.style.height = "100vh";
+        }
+    });
 
     // Телефоны
     let flagVinyl = false;
