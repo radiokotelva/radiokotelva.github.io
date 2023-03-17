@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://stream.globalic.com.ua:1560/media/static/css/current_track_widget/status_widget.css" />
 
+
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="shortcut icon" type="image/png" href="./img/favicon.ico" />
     <link rel="stylesheet" href="./css/style.min.css">
@@ -86,7 +87,8 @@
                 <div class="mobile_menu__item mobile_menu__item_contacts">Контакти</div>
                 <div class="mobile_menu__item mobile_menu__item_info">Наша команда</div>
                 <button class="mobile_menu__item mobile_menu__item_btn mobile_menu__item_btn_program">Програма</button>
-                <button class="mobile_menu__item mobile_menu__item_btn mobile_menu__item_btn_order">Замовити трек</button>
+                <button class="mobile_menu__item mobile_menu__item_btn mobile_menu__item_btn_order">Замовити
+                    трек</button>
                 <button class="mobile_menu__item mobile_menu__item_btn mobile_menu__item_btn_chat">Чат</button>
                 <div class="mobile_menu__close_btn"><i class="fa-solid fa-xmark"></i></div>
             </div>
@@ -366,7 +368,8 @@
             <!-- Дистрибутив -->
             <div class="distributor">
                 <div class="disributor__leading">
-                    <div class="disributor__leading_img"><img src="./img/leading.png" alt="leading" class="leading"></div>
+                    <div class="disributor__leading_img"><img src="./img/leading.png" alt="leading" class="leading">
+                    </div>
                     <div class="disributor__leading_wrap">
                         <div class="disributor__leading_subtitle">Ведучий</div>
                         <div class="disributor__leading_title">Степан Бандерко</div>
@@ -384,6 +387,23 @@
                     </div>
                 </div>
 
+                <!-- Виджет статус -->
+                <div style="width: 150px;" id="status_widget">
+                    <div class="sc-status-widget">
+                        <div id="stream-status-widget" is="stream-status-widget" lang="ua" api-base="https://stream.globalic.com.ua:1560/api/v2"
+                            server-id="1" bgcolor="#ffffff" bgopacity="0" bgimage="" meta_font_size="14"
+                            meta_font_style="normal" meta_font_color="#ffffff" meta_opacity="1"
+                            progress_bar_color="#486bcd" progress_bar_bg_color="#e1e1e1" progress_bar_height="25"
+                            progress_opacity="1" progress_font_color="#000000" progress_font_opacity="1"
+                            track_image_default="https://stream.globalic.com.ua:1560/media/widgets/imgonline-com-ua-Shape-akRiwlesO6Ta.png"
+                            track_image_size="50" vote_show="true" vote_buttons_color="#1e99a1"
+                            vote_results_font_color_neg="#ff0000" vote_results_font_color_pos="#00ff00"
+                            vote_results_font_size="14">
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- Плеер -->
                 <div class="main_player">
                     <div id="rtJpID-1"></div>
@@ -398,7 +418,7 @@
                         </div>
                     </div>
                     <div class="distributor__current_track">
-                        <div class="sc-status-widget">
+                        <!-- <div class="sc-status-widget">
                             <div is="stream-status-widget" lang="ua"
                                 api-base="https://stream.globalic.com.ua:1560/api/v2" server-id="1" bgcolor="#ffffff"
                                 bgopacity="0" meta_font_size="18" meta_font_style="normal" meta_font_color="#28BCC6"
@@ -407,7 +427,7 @@
                                 vote_results_font_color_neg="#ffffff" vote_results_font_color_pos="#ffffff"
                                 vote_results_font_size="14">
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -550,8 +570,8 @@
     <aside class="sidebar">
         <a href="https://www.instagram.com/vilneradiokotelva/" target="_blank"><img src="./img/sidebar_icon_2.svg"
                 alt=""></a>
-        <a href="https://www.facebook.com/kotelvavilneradio" target="_blank"><img
-                src="./img/sidebar_icon_3.svg" alt=""></a>
+        <a href="https://www.facebook.com/kotelvavilneradio" target="_blank"><img src="./img/sidebar_icon_3.svg"
+                alt=""></a>
         <a href="https://t.me/vilneradiokotelva" target="_blank"><img src="./img/sidebar_icon_1.svg" alt=""></a>
     </aside>
 
@@ -668,12 +688,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://kit.fontawesome.com/c25a49d2fa.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <!-- Текущий трек -->
-    <script type="text/javascript"
-        src="https://stream.globalic.com.ua:1560/media/static/js/current_track_widget/status_widget.js"></script>
     <!-- Заказ песен -->
     <script>
         if (typeof jQuery == 'undefined') {
@@ -691,6 +708,10 @@
                 "#RTWidgetTrackRequests", "ua");
         });
     </script>
+    <script type="text/javascript"></script>
+    <!-- Текущий трек -->
+    <script type="text/javascript"
+        src="https://stream.globalic.com.ua:1560/media/static/js/current_track_widget/status_widget.js"></script>
 
 </body>
 

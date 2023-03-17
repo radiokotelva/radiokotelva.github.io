@@ -1987,6 +1987,33 @@ td {
   margin-top: 6px
 }
 
+#status_widget {
+  margin-right: 80px;
+  margin-top: -60px;
+  transform: translate(100px, 20%);
+  background: linear-gradient(235.31deg, #be1f61a9 -6.95%, #62076A 55.14%, #115595 106.6%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#stream-status-widget > div > div.track_st_track-meta {
+  font-size: 12px !important;
+  border: none;
+}
+
+@media (max-width: 1440px) {
+  #status_widget {
+    position: fixed;
+    top: 115px;
+    right: 330px;
+    z-index: 20;
+  }
+
+  .track_st_widget[data-v-3d6dba62] {
+    border: none;
+  }
+}
+
 @media (max-width: 1800px) {
   .content_wrapper {
     padding-right: 200px
